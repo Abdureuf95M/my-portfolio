@@ -1,429 +1,644 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Abdureuf Muhamednur Ali - Software Engineering Student at Arba Minch University and Aspiring Developer.">
-  <title>Abdureuf Muhamednur Ali | Software Engineering Student & Aspiring Developer</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Abdureuf Muhamednur Ali - Software Engineering Student at Arba Minch University and Aspiring Developer."
+    />
+    <title>
+      Abdureuf Muhamednur Ali | Software Engineering Student & Aspiring
+      Developer
+    </title>
 
-  <!-- Google Fonts: Inter & Outfit -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Google Fonts: Inter & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Ambient background lighting effect -->
-  <div class="ambient-glow glow-1" aria-hidden="true"></div>
-  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Ambient background lighting effect -->
+    <div class="ambient-glow glow-1" aria-hidden="true"></div>
+    <div class="ambient-glow glow-2" aria-hidden="true"></div>
 
-  <!-- Navigation Bar -->
-  <header class="navbar" id="navbar">
-    <div class="container nav-container">
-      <a href="#hero" class="brand-logo" aria-label="Abdureuf Muhamednur Ali Home">
-        <span class="logo-accent">A</span>bdureuf<span class="logo-dot">.</span>
-      </a>
+    <!-- Navigation Bar -->
+    <header class="navbar" id="navbar">
+      <div class="container nav-container">
+        <a
+          href="#hero"
+          class="brand-logo"
+          aria-label="Abdureuf Muhamednur Ali Home"
+        >
+          <span class="logo-accent">A</span>bdureuf<span class="logo-dot"
+            >.</span
+          >
+        </a>
 
-      <!-- Desktop Navigation Links -->
-      <nav class="nav-menu" id="navMenu">
-        <ul class="nav-list">
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#goal" class="nav-link">Goal</a></li>
-          <li><a href="#contact" class="nav-link btn-nav">Contact Me</a></li>
-        </ul>
-      </nav>
+        <!-- Desktop Navigation Links -->
+        <nav class="nav-menu" id="navMenu">
+          <ul class="nav-list">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#goal" class="nav-link">Goal</a></li>
+            <li><a href="#contact" class="nav-link btn-nav">Contact Me</a></li>
+          </ul>
+        </nav>
 
-      <!-- Mobile Hamburger Toggle -->
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-    </div>
-  </header>
+        <!-- Mobile Hamburger Toggle -->
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </header>
 
-  <main id="main-content">
-    <!-- Hero Section -->
-    <section class="section hero" id="hero">
-      <div class="container hero-container">
-        <div class="hero-content">
-          <div class="badge status-badge">
-            <span class="status-indicator"></span> Available for Internships
+    <main id="main-content">
+      <!-- Hero Section -->
+      <section class="section hero" id="hero">
+        <div class="container hero-container">
+          <div class="hero-content">
+            <div class="badge status-badge">
+              <span class="status-indicator"></span> Available for Internships
+            </div>
+            <h1 class="hero-title">
+              Hi, I'm <span class="gradient-text">Abdureuf Muhamednur Ali</span>
+            </h1>
+            <p class="hero-subtitle">
+              Software Engineering Student
+              <span class="divider">|</span> Aspiring Developer
+            </p>
+            <p class="hero-description">
+              Studying at <strong>Arba Minch University</strong>, dedicated to
+              building meaningful digital solutions and solving societal
+              problems through modern software engineering.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">
+                View My Work
+                <svg
+                  class="btn-icon"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+
+            <div class="quick-contact">
+              <span class="quick-contact-label">Direct Email:</span>
+              <a
+                class="copy-email-btn"
+                href="mailto:abdureufmuhamednur@gmail.com"
+                title="Click to email me"
+              >
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path
+                    d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
+                  ></path>
+                </svg>
+                abdureufmuhamednur@gmail.com
+              </a>
+            </div>
           </div>
-          <h1 class="hero-title">
-            Hi, I'm <span class="gradient-text">Abdureuf Muhamednur Ali</span>
-          </h1>
-          <p class="hero-subtitle">
-            Software Engineering Student <span class="divider">|</span> Aspiring Developer
+
+          <!-- Profile Image: Static positioned -->
+          <div class="hero-image-wrapper">
+            <div class="hero-image-orbit">
+              <div class="hero-image-ring"></div>
+              <div class="hero-image-ring ring-2"></div>
+              <img
+                src="assets/images/profile.jpg"
+                alt="Abdureuf Muhamednur Ali - Profile Photo"
+                class="hero-profile-img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="section about" id="about">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-tag">Background</p>
+            <h2 class="section-title">About Me</h2>
+          </div>
+
+          <div class="about-grid" data-reveal>
+            <div class="about-card main-bio" data-reveal>
+              <div class="card-icon-wrapper">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <h3>My Journey & Mission</h3>
+              <p class="bio-text">
+                I am a Software Engineering student at
+                <strong>Arba Minch University</strong>. With strong commitment
+                and continuous dedication, Inshallah I will solve many problems
+                of our society through technological innovation and accessible
+                software.
+              </p>
+              <p class="bio-text">
+                My current focus is building solid fundamentals in web
+                development, exploring front-end technologies, and collaborating
+                on projects that bring tangible value to users.
+              </p>
+            </div>
+
+            <div class="about-card education-card" data-reveal>
+              <div class="card-icon-wrapper">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <h3>Education</h3>
+              <div class="edu-item">
+                <h4 class="edu-degree">B.Sc. in Software Engineering</h4>
+                <p class="edu-school">Arba Minch University</p>
+                <span class="edu-status">Currently Enrolled</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="section skills" id="skills">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-tag">Tech Stack</p>
+            <h2 class="section-title">Skills & Technologies</h2>
+            <p class="section-subtitle">
+              The tools and languages I work with and continuously study.
+            </p>
+          </div>
+
+          <div class="skills-grid">
+            <!-- Skill: HTML5 -->
+            <div class="skill-card" data-reveal>
+              <div class="skill-header">
+                <div class="skill-icon-box">HTML</div>
+                <div class="skill-meta">
+                  <h3 class="skill-title">HTML5</h3>
+                  <span class="skill-level proficiency-core">Core</span>
+                </div>
+              </div>
+              <p class="skill-desc">
+                Semantic markup, accessibility, modern web page structure.
+              </p>
+            </div>
+
+            <!-- Skill: CSS3 -->
+            <div class="skill-card" data-reveal>
+              <div class="skill-header">
+                <div class="skill-icon-box">CSS</div>
+                <div class="skill-meta">
+                  <h3 class="skill-title">CSS3</h3>
+                  <span class="skill-level proficiency-core">Core</span>
+                </div>
+              </div>
+              <p class="skill-desc">
+                Responsive layouts, Flexbox, Grid, custom styling, animations.
+              </p>
+            </div>
+
+            <!-- Skill: JavaScript -->
+            <div class="skill-card" data-reveal>
+              <div class="skill-header">
+                <div class="skill-icon-box">JS</div>
+                <div class="skill-meta">
+                  <h3 class="skill-title">JavaScript</h3>
+                  <span class="skill-level proficiency-learning"
+                    >Actively Learning</span
+                  >
+                </div>
+              </div>
+              <p class="skill-desc">
+                DOM manipulation, ES6+ features, asynchronous logic.
+              </p>
+            </div>
+
+            <!-- Skill: React -->
+            <div class="skill-card" data-reveal>
+              <div class="skill-header">
+                <div class="skill-icon-box">⚛️</div>
+                <div class="skill-meta">
+                  <h3 class="skill-title">React</h3>
+                  <span class="skill-level proficiency-learning"
+                    >Actively Learning</span
+                  >
+                </div>
+              </div>
+              <p class="skill-desc">
+                Component-driven architecture, hooks, modern UI state concepts.
+              </p>
+            </div>
+
+            <!-- Skill: Git & GitHub -->
+            <div class="skill-card" data-reveal>
+              <div class="skill-header">
+                <div class="skill-icon-box">Git</div>
+                <div class="skill-meta">
+                  <h3 class="skill-title">Git & GitHub</h3>
+                  <span class="skill-level proficiency-core">Workflow</span>
+                </div>
+              </div>
+              <p class="skill-desc">
+                Version control, repository management, branch workflows.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="section projects" id="projects">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-tag">Portfolio</p>
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">
+              Selected applications and projects developed during my studies.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Project 1: Bright Academy -->
+            <article class="project-card" data-reveal>
+              <div class="project-card-top">
+                <div class="folder-icon">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  >
+                    <path
+                      d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                    ></path>
+                  </svg>
+                </div>
+                <span class="project-status">Featured</span>
+              </div>
+              <div class="project-card-body">
+                <h3 class="project-title">Bright Academy</h3>
+                <p class="project-description">
+                  An educational platform initiative designed to facilitate
+                  learning, streamline academic resources, and deliver a focused
+                  learning experience for students and educators.
+                </p>
+              </div>
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">Web Design</span>
+              </div>
+            </article>
+
+            <!-- Project 2: My Portfolio -->
+            <article class="project-card" data-reveal>
+              <div class="project-card-top">
+                <div class="folder-icon">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  >
+                    <path
+                      d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                    ></path>
+                  </svg>
+                </div>
+                <span class="project-status">Live</span>
+              </div>
+              <div class="project-card-body">
+                <h3 class="project-title">My Portfolio</h3>
+                <p class="project-description">
+                  A clean, modern, and responsive dark-themed portfolio website
+                  highlighting my projects, skills, education, and career
+                  aspirations as a software engineer.
+                </p>
+              </div>
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">Vanilla CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+            </article>
+
+            <!-- Project 3: My Children -->
+            <article class="project-card" data-reveal>
+              <div class="project-card-top">
+                <div class="folder-icon">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                  >
+                    <path
+                      d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                    ></path>
+                  </svg>
+                </div>
+                <span class="project-status">Concept / Build</span>
+              </div>
+              <div class="project-card-body">
+                <h3 class="project-title">My Children</h3>
+                <p class="project-description">
+                  A community-centric software concept dedicated to child
+                  welfare, family care, and organizing supportive resources for
+                  youth and guardians in the community.
+                </p>
+              </div>
+              <div class="project-tags">
+                <span class="tag">Software Design</span>
+                <span class="tag">UI/UX</span>
+                <span class="tag">Social Impact</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Goal / Internship Section -->
+      <section class="section goal-section" id="goal">
+        <div class="container">
+          <div class="goal-box" data-reveal>
+            <div class="goal-content">
+              <span class="badge">Career Objective</span>
+              <h2 class="goal-title">Seeking Internship Opportunities</h2>
+              <p class="goal-description">
+                As an ambitious Software Engineering student, I am actively
+                looking for internship roles where I can contribute to
+                real-world software, learn alongside senior engineers, and build
+                scalable technologies that solve human challenges.
+              </p>
+              <div class="goal-highlights">
+                <div class="highlight-item">
+                  <span class="highlight-check">✓</span> Motivated self-starter
+                  with daily study habits
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-check">✓</span> Solid foundation in web
+                  standards & Git workflow
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-check">✓</span> Driven by purpose and
+                  societal impact
+                </div>
+              </div>
+            </div>
+            <div class="goal-action">
+              <a href="#contact" class="btn btn-primary btn-large"
+                >Discuss An Internship</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="section contact" id="contact">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-tag">Get in Touch</p>
+            <h2 class="section-title">Contact Me</h2>
+            <p class="section-subtitle">
+              Have an internship opportunity, collaboration, or question? Send
+              me a message!
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <!-- Contact Info Column -->
+            <div class="contact-info-card" data-reveal>
+              <h3>Direct Contact</h3>
+              <p class="contact-text">
+                I am always happy to discuss new opportunities, feedback on my
+                projects, or prospective internships.
+              </p>
+
+              <div class="info-block">
+                <div class="info-icon">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                    ></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <span class="info-label">Email Address</span>
+                  <a
+                    href="mailto:abdureufmuhamednur@gmail.com"
+                    class="info-value"
+                    >abdureufmuhamednur@gmail.com</a
+                  >
+                </div>
+              </div>
+
+              <div class="info-block">
+                <div class="info-icon">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                    ></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <span class="info-label">Location / University</span>
+                  <span class="info-value"
+                    >Arba Minch University, Ethiopia</span
+                  >
+                </div>
+              </div>
+
+              <a
+                class="btn btn-secondary copy-full-btn"
+                href="mailto:abdureufmuhamednur@gmail.com"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path
+                    d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
+                  ></path>
+                </svg>
+                Copy Email Address
+              </a>
+              <div class="copy-feedback" aria-live="polite"></div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-card" data-reveal>
+              <h3>Send a Direct Email</h3>
+              <form
+                class="contact-form"
+                action="mailto:abdureufmuhamednur@gmail.com"
+                method="post"
+                enctype="text/plain"
+              >
+                <div class="form-group">
+                  <label for="senderName">Your Name</label>
+                  <input
+                    type="text"
+                    id="senderName"
+                    name="name"
+                    required
+                    placeholder="e.g. Sarah Jenkins"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="senderEmail">Your Email</label>
+                  <input
+                    type="email"
+                    id="senderEmail"
+                    name="email"
+                    required
+                    placeholder="e.g. sarah@company.com"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    required
+                    placeholder="Internship Opportunity / Inquiry"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    required
+                    placeholder="Write your message here..."
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-submit">
+                  <span>Send via Email Client</span>
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-info">
+          <p class="footer-name">Abdureuf Muhamednur Ali</p>
+          <p class="footer-title">
+            Software Engineering Student | Aspiring Developer
           </p>
-          <p class="hero-description">
-            Studying at <strong>Arba Minch University</strong>, dedicated to building meaningful digital solutions and solving societal problems through modern software engineering.
+        </div>
+        <div class="footer-copy">
+          <p>
+            &copy; 2026 Abdureuf Muhamednur Ali. Built with modern HTML & CSS.
           </p>
-
-          <div class="hero-actions">
-            <a href="#projects" class="btn btn-primary">
-              View My Work
-              <svg class="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
-            </a>
-            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-          </div>
-
-          <div class="quick-contact">
-            <span class="quick-contact-label">Direct Email:</span>
-            <button class="copy-email-btn" id="heroCopyEmail" data-email="abdureufmuhamednur@gmail.com" title="Click to copy email">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-              </svg>
-              abdureufmuhamednur@gmail.com
-            </button>
-          </div>
         </div>
       </div>
-    </section>
+    </footer>
 
-    <!-- About Section -->
-    <section class="section about" id="about">
-      <div class="container">
-        <div class="section-header">
-          <p class="section-tag">Background</p>
-          <h2 class="section-title">About Me</h2>
-        </div>
-
-        <div class="about-grid">
-          <div class="about-card main-bio">
-            <div class="card-icon-wrapper">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                <circle cx="12" cy="7" r="4"></circle>
-              </svg>
-            </div>
-            <h3>My Journey & Mission</h3>
-            <p class="bio-text">
-              I am a Software Engineering student at <strong>Arba Minch University</strong>. With strong commitment and continuous dedication, Inshallah I will solve many problems of our society through technological innovation and accessible software.
-            </p>
-            <p class="bio-text">
-              My current focus is building solid fundamentals in web development, exploring front-end technologies, and collaborating on projects that bring tangible value to users.
-            </p>
-          </div>
-
-          <div class="about-card education-card">
-            <div class="card-icon-wrapper">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
-              </svg>
-            </div>
-            <h3>Education</h3>
-            <div class="edu-item">
-              <h4 class="edu-degree">B.Sc. in Software Engineering</h4>
-              <p class="edu-school">Arba Minch University</p>
-              <span class="edu-status">Currently Enrolled</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="section skills" id="skills">
-      <div class="container">
-        <div class="section-header">
-          <p class="section-tag">Tech Stack</p>
-          <h2 class="section-title">Skills & Technologies</h2>
-          <p class="section-subtitle">The tools and languages I work with and continuously study.</p>
-        </div>
-
-        <div class="skills-grid">
-          <!-- Skill: HTML5 -->
-          <div class="skill-card">
-            <div class="skill-header">
-              <div class="skill-icon-box">HTML</div>
-              <div class="skill-meta">
-                <h3 class="skill-title">HTML5</h3>
-                <span class="skill-level proficiency-core">Core</span>
-              </div>
-            </div>
-            <p class="skill-desc">Semantic markup, accessibility, modern web page structure.</p>
-          </div>
-
-          <!-- Skill: CSS3 -->
-          <div class="skill-card">
-            <div class="skill-header">
-              <div class="skill-icon-box">CSS</div>
-              <div class="skill-meta">
-                <h3 class="skill-title">CSS3</h3>
-                <span class="skill-level proficiency-core">Core</span>
-              </div>
-            </div>
-            <p class="skill-desc">Responsive layouts, Flexbox, Grid, custom styling, animations.</p>
-          </div>
-
-          <!-- Skill: JavaScript -->
-          <div class="skill-card">
-            <div class="skill-header">
-              <div class="skill-icon-box">JS</div>
-              <div class="skill-meta">
-                <h3 class="skill-title">JavaScript</h3>
-                <span class="skill-level proficiency-learning">Actively Learning</span>
-              </div>
-            </div>
-            <p class="skill-desc">DOM manipulation, ES6+ features, asynchronous logic.</p>
-          </div>
-
-          <!-- Skill: React -->
-          <div class="skill-card">
-            <div class="skill-header">
-              <div class="skill-icon-box">⚛️</div>
-              <div class="skill-meta">
-                <h3 class="skill-title">React</h3>
-                <span class="skill-level proficiency-learning">Actively Learning</span>
-              </div>
-            </div>
-            <p class="skill-desc">Component-driven architecture, hooks, modern UI state concepts.</p>
-          </div>
-
-          <!-- Skill: Git & GitHub -->
-          <div class="skill-card">
-            <div class="skill-header">
-              <div class="skill-icon-box">Git</div>
-              <div class="skill-meta">
-                <h3 class="skill-title">Git & GitHub</h3>
-                <span class="skill-level proficiency-core">Workflow</span>
-              </div>
-            </div>
-            <p class="skill-desc">Version control, repository management, branch workflows.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="section projects" id="projects">
-      <div class="container">
-        <div class="section-header">
-          <p class="section-tag">Portfolio</p>
-          <h2 class="section-title">Featured Projects</h2>
-          <p class="section-subtitle">Selected applications and projects developed during my studies.</p>
-        </div>
-
-        <div class="projects-grid">
-          <!-- Project 1: Bright Academy -->
-          <article class="project-card">
-            <div class="project-card-top">
-              <div class="folder-icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-                </svg>
-              </div>
-              <span class="project-status">Featured</span>
-            </div>
-            <div class="project-card-body">
-              <h3 class="project-title">Bright Academy</h3>
-              <p class="project-description">
-                An educational platform initiative designed to facilitate learning, streamline academic resources, and deliver a focused learning experience for students and educators.
-              </p>
-            </div>
-            <div class="project-tags">
-              <span class="tag">HTML</span>
-              <span class="tag">CSS</span>
-              <span class="tag">Web Design</span>
-            </div>
-          </article>
-
-          <!-- Project 2: My Portfolio -->
-          <article class="project-card">
-            <div class="project-card-top">
-              <div class="folder-icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-                </svg>
-              </div>
-              <span class="project-status">Live</span>
-            </div>
-            <div class="project-card-body">
-              <h3 class="project-title">My Portfolio</h3>
-              <p class="project-description">
-                A clean, modern, and responsive dark-themed portfolio website highlighting my projects, skills, education, and career aspirations as a software engineer.
-              </p>
-            </div>
-            <div class="project-tags">
-              <span class="tag">HTML5</span>
-              <span class="tag">Vanilla CSS</span>
-              <span class="tag">JavaScript</span>
-            </div>
-          </article>
-
-          <!-- Project 3: My Children -->
-          <article class="project-card">
-            <div class="project-card-top">
-              <div class="folder-icon">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                  <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-                </svg>
-              </div>
-              <span class="project-status">Concept / Build</span>
-            </div>
-            <div class="project-card-body">
-              <h3 class="project-title">My Children</h3>
-              <p class="project-description">
-                A community-centric software concept dedicated to child welfare, family care, and organizing supportive resources for youth and guardians in the community.
-              </p>
-            </div>
-            <div class="project-tags">
-              <span class="tag">Software Design</span>
-              <span class="tag">UI/UX</span>
-              <span class="tag">Social Impact</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Goal / Internship Section -->
-    <section class="section goal-section" id="goal">
-      <div class="container">
-        <div class="goal-box">
-          <div class="goal-content">
-            <span class="badge">Career Objective</span>
-            <h2 class="goal-title">Seeking Internship Opportunities</h2>
-            <p class="goal-description">
-              As an ambitious Software Engineering student, I am actively looking for internship roles where I can contribute to real-world software, learn alongside senior engineers, and build scalable technologies that solve human challenges.
-            </p>
-            <div class="goal-highlights">
-              <div class="highlight-item">
-                <span class="highlight-check">✓</span> Motivated self-starter with daily study habits
-              </div>
-              <div class="highlight-item">
-                <span class="highlight-check">✓</span> Solid foundation in web standards & Git workflow
-              </div>
-              <div class="highlight-item">
-                <span class="highlight-check">✓</span> Driven by purpose and societal impact
-              </div>
-            </div>
-          </div>
-          <div class="goal-action">
-            <a href="#contact" class="btn btn-primary btn-large">Discuss An Internship</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="section contact" id="contact">
-      <div class="container">
-        <div class="section-header">
-          <p class="section-tag">Get in Touch</p>
-          <h2 class="section-title">Contact Me</h2>
-          <p class="section-subtitle">Have an internship opportunity, collaboration, or question? Send me a message!</p>
-        </div>
-
-        <div class="contact-grid">
-          <!-- Contact Info Column -->
-          <div class="contact-info-card">
-            <h3>Direct Contact</h3>
-            <p class="contact-text">
-              I am always happy to discuss new opportunities, feedback on my projects, or prospective internships.
-            </p>
-
-            <div class="info-block">
-              <div class="info-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                  <polyline points="22,6 12,13 2,6"></polyline>
-                </svg>
-              </div>
-              <div>
-                <span class="info-label">Email Address</span>
-                <a href="mailto:abdureufmuhamednur@gmail.com" class="info-value">abdureufmuhamednur@gmail.com</a>
-              </div>
-            </div>
-
-            <div class="info-block">
-              <div class="info-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                  <circle cx="12" cy="10" r="3"></circle>
-                </svg>
-              </div>
-              <div>
-                <span class="info-label">Location / University</span>
-                <span class="info-value">Arba Minch University, Ethiopia</span>
-              </div>
-            </div>
-
-            <button class="btn btn-secondary copy-full-btn" id="copyEmailAction">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-              </svg>
-              Copy Email Address
-            </button>
-            <div id="copyFeedback" class="copy-feedback" aria-live="polite"></div>
-          </div>
-
-          <!-- Contact Form -->
-          <div class="contact-form-card">
-            <h3>Send a Direct Email</h3>
-            <form id="contactForm" class="contact-form">
-              <div class="form-group">
-                <label for="senderName">Your Name</label>
-                <input type="text" id="senderName" name="name" required placeholder="e.g. Sarah Jenkins">
-              </div>
-
-              <div class="form-group">
-                <label for="senderEmail">Your Email</label>
-                <input type="email" id="senderEmail" name="email" required placeholder="e.g. sarah@company.com">
-              </div>
-
-              <div class="form-group">
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subject" required placeholder="Internship Opportunity / Inquiry">
-              </div>
-
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="4" required placeholder="Write your message here..."></textarea>
-              </div>
-
-              <button type="submit" class="btn btn-primary btn-submit">
-                <span>Send via Email Client</span>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <line x1="22" y1="2" x2="11" y2="13"></line>
-                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                </svg>
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-container">
-      <div class="footer-info">
-        <p class="footer-name">Abdureuf Muhamednur Ali</p>
-        <p class="footer-title">Software Engineering Student | Aspiring Developer</p>
-      </div>
-      <div class="footer-copy">
-        <p>&copy; <span id="currentYear"></span> Abdureuf Muhamednur Ali. Built with modern HTML & CSS.</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Notification Toast for interactive feedback -->
-  <div id="toast" class="toast" role="status" aria-live="polite"></div>
-
-  <!-- Main JavaScript File -->
-  <script src="script.js"></script>
-</body>
+    <!-- Notification Toast for interactive feedback -->
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </body>
 </html>

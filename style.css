@@ -343,7 +343,13 @@ button { cursor: pointer; border: none; background: none; font: inherit; color: 
   align-items: center;
   padding-top: 100px; /* Offset fixed nav */
 }
-.hero-container { max-width: 780px; }
+.hero-container {
+  max-width: 1140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3xl);
+}
 .hero-content {
   animation: fadeInUp 0.8s var(--transition-smooth) both;
 }
@@ -361,6 +367,16 @@ button { cursor: pointer; border: none; background: none; font: inherit; color: 
   line-height: 1.15;
   letter-spacing: -1px;
   margin-bottom: var(--space-md);
+  /* Slides in from the left edge of the page */
+  animation: slideAcross 1.6s ease-in-out both;
+}
+
+/* Title moves from one end of the page to its resting spot */
+@keyframes slideAcross {
+  0%   { transform: translateX(calc(-50vw + 0px)); opacity: 0; }
+  15%  { opacity: 1; }
+  85%  { opacity: 1; }
+  100% { transform: translateX(0); opacity: 1; }
 }
 .gradient-text {
   background: var(--gradient-primary);
@@ -417,6 +433,105 @@ button { cursor: pointer; border: none; background: none; font: inherit; color: 
 .copy-email-btn:hover {
   color: var(--accent-primary);
   background: var(--accent-glow);
+}
+
+
+/* ─── 9b. HERO PROFILE IMAGE — Static Position ─── */
+
+/* Wrapper: positions the image area in the hero (slightly raised) */
+.hero-image-wrapper {
+  flex-shrink: 0;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-30px);
+  animation: imageSlideUp 0.8s var(--transition-smooth) both;
+  animation-delay: 0.15s;
+}
+
+/* Image fades in and settles slightly higher than center */
+@keyframes imageSlideUp {
+  from { opacity: 0; transform: translateY(0); }
+  to   { opacity: 1; transform: translateY(-30px); }
+}
+
+/* Static container — no floating, no dragging */
+.hero-image-orbit {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+/* Decorative orbiting rings */
+.hero-image-ring {
+  position: absolute;
+  inset: -15px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(139, 92, 246, 0.15);
+  animation: ringRotate 10s linear infinite;
+  pointer-events: none;
+}
+.hero-image-ring::before {
+  content: '';
+  position: absolute;
+  top: -4px; left: 50%;
+  width: 8px; height: 8px;
+  background: var(--accent-primary);
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba(139, 92, 246, 0.6);
+}
+.hero-image-ring.ring-2 {
+  inset: -30px;
+  border-color: rgba(139, 92, 246, 0.08);
+  animation-duration: 15s;
+  animation-direction: reverse;
+}
+.hero-image-ring.ring-2::before {
+  width: 6px; height: 6px;
+  background: rgba(139, 92, 246, 0.5);
+  box-shadow: 0 0 8px rgba(139, 92, 246, 0.4);
+}
+
+/* The actual profile image */
+.hero-profile-img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 3px solid rgba(139, 92, 246, 0.3);
+  box-shadow:
+    0 0 40px rgba(139, 92, 246, 0.15),
+    0 8px 32px rgba(0, 0, 0, 0.4);
+  transition: border-color var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+/* Hover glow on the image */
+.hero-image-orbit:hover .hero-profile-img {
+  border-color: rgba(139, 92, 246, 0.6);
+  box-shadow:
+    0 0 60px rgba(139, 92, 246, 0.25),
+    0 0 100px rgba(139, 92, 246, 0.1),
+    0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+/* ── Ring Rotation ── */
+@keyframes ringRotate {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* ── Hint Pulse ── */
+@keyframes hintPulse {
+  0%, 100% { opacity: 0.8; }
+  50%      { opacity: 0.4; }
 }
 
 
@@ -869,16 +984,19 @@ a.info-value:hover { color: var(--accent-primary); }
 }
 
 
-/* ─── 17. SCROLL-REVEAL ANIMATION ─── */
-/* Elements with data-reveal start invisible, then fade in when visible   */
+/* ─── 17. REVEAL ANIMATION (CSS-only, runs on page load) ─── */
+/* Elements with data-reveal fade in once the page loads.                */
 [data-reveal] {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  animation: revealUp 0.7s ease both;
 }
-[data-reveal].revealed {
-  opacity: 1;
-  transform: translateY(0);
+[data-reveal]:nth-child(2) { animation-delay: 0.12s; }
+[data-reveal]:nth-child(3) { animation-delay: 0.24s; }
+[data-reveal]:nth-child(4) { animation-delay: 0.36s; }
+[data-reveal]:nth-child(5) { animation-delay: 0.48s; }
+[data-reveal]:nth-child(6) { animation-delay: 0.6s; }
+@keyframes revealUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 
@@ -886,6 +1004,29 @@ a.info-value:hover { color: var(--accent-primary); }
 
 /* ── Tablet (≤ 900px) ── */
 @media (max-width: 900px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-image-wrapper {
+    width: 250px;
+    height: 250px;
+    margin-top: var(--space-xl);
+  }
+  .hero-image-orbit {
+    width: 220px;
+    height: 220px;
+  }
+  .hero-profile-img {
+    width: 190px;
+    height: 190px;
+  }
+  .hero-actions {
+    justify-content: center;
+  }
+  .quick-contact {
+    justify-content: center;
+  }
   .about-grid {
     grid-template-columns: 1fr;
   }
@@ -959,6 +1100,22 @@ a.info-value:hover { color: var(--accent-primary); }
     flex-direction: column;
     align-items: flex-start;
   }
+
+  .hero-image-wrapper {
+    width: 200px;
+    height: 200px;
+    order: -1; /* Image first on mobile */
+  }
+  .hero-image-orbit {
+    width: 180px;
+    height: 180px;
+  }
+  .hero-profile-img {
+    width: 160px;
+    height: 160px;
+  }
+  .hero-image-ring { inset: -10px; }
+  .hero-image-ring.ring-2 { inset: -20px; }
 
   .skills-grid {
     grid-template-columns: 1fr;
